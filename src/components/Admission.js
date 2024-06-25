@@ -14,7 +14,7 @@ export const Admission = () => {
     const formData = new FormData(event.target);
 
     try {
-      const response = await axios.post('https://maliki-mcc.com/submit-form', {
+      const response = await axios.post('https://api.maliki-mcc.com/submit-form', {
         name: formData.get('name'),
         whatsapp: formData.get('whatsapp'),
         message: formData.get('message'),
