@@ -30,6 +30,10 @@ export const Admission = () => {
     } finally {
       setLoading(false);
     }
+
+    setTimeout(() => {
+      setMessage(null);
+    }, 3000);
   };
 
   return (
